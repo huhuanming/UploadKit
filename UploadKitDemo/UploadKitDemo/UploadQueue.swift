@@ -13,10 +13,19 @@ class UploadQueue {
     var tasks: Array<UploadTaskDelegate> = []
     var maximumConcurrent : Int = 1
     
+    init() {
+        
+    }
+    
     func start() -> Void {
 
     }
     
+    func pause() -> Void {
+        
+    }
     
-    
+    func stop() -> Void {
+        
+    }
 }
