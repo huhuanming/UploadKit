@@ -15,9 +15,10 @@ protocol UploadTaskDelegate {
     var request: NSMutableURLRequest { get }
     var task: URLSessionTask { get }
     var priority: Int { get set }
-    func before(before_func: ()  -> Void) -> Self
-    func complete(complete_func: ()  -> Void) -> Self
-    func success(success_func: (Data)  -> Void) -> Self
-    func failure(failure_func: (Error , Data, String)  -> Void) -> Self
+    func before(beforeFunc: ()  -> Void) -> Self
+    func process(process: (Progress)->Void) -> Self
+    func complete(completeFunc: ()  -> Void) -> Self
+    func success(successFunc: (Data)  -> Void) -> Self
+    func failure(failureFunc: (Error , Data, String)  -> Void) -> Self
     func start()
 }
