@@ -1,15 +1,13 @@
-// https://github.com/Quick/Quick
-
 import Quick
 import Nimble
 import UploadKit
 
-class TableOfContentsSpec: QuickSpec {
+class UploadKitTest: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("Uploader Tests") {
 
-            it("can do maths") {
-                expect(1) != 2
+            it("is a SingleInstance") {
+               expect(Uploader.shared) === Uploader.shared
             }
 
             it("can read") {
