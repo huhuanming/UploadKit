@@ -7,11 +7,12 @@ target 'UploadKit_Example' do
 
   target 'UploadKit_Tests' do
     inherit! :search_paths
-
-  pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
-  pod 'FBSnapshotTestCase', '~> 2.1.4'
-  pod 'Nimble-Snapshots', '~> 6.3.0'
-  pod 'SwiftLint', '~> 0.24.0'
+  
+    pod 'UploadKit', :path => '../'
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+    pod 'FBSnapshotTestCase', '~> 2.1.4'
+    pod 'Nimble-Snapshots', '~> 6.3.0'
+    pod 'SwiftLint', '~> 0.24.0'
   end
 end
